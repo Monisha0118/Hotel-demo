@@ -5,6 +5,6 @@ node{
   }
   stage('build') {
     def mvnHome = tool name: 'maven3', type: 'maven'
-    sh "${mvnHome}/bin/mvn clean install"
+    sh "${mvnHome}/mvn clean install"
   }
 }
